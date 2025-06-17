@@ -11,6 +11,10 @@ RUN apt-get update && apt-get install -y \
     unzip \
     libpq-dev
 
+# Instalar Node.js e NPM
+RUN curl -fsSL https://deb.nodesource.com/setup_18.x | bash - \
+    && apt-get install -y nodejs
+
 # Instalar extensões PHP
 RUN docker-php-ext-install pdo pdo_pgsql mbstring exif pcntl bcmath gd
 
