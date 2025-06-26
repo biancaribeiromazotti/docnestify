@@ -318,18 +318,12 @@
                             <span class="nav-link-text">Tags</span>
                         </a>
                     </div>
-                    {{-- <div class="nav-item">
-                        <a href="#" class="nav-link-sidebar">
-                            <i class="fas fa-chart-bar"></i>
-                            <span class="nav-link-text">Relatórios</span>
-                        </a>
-                    </div>
                     <div class="nav-item">
                         <a href="#" class="nav-link-sidebar">
-                            <i class="fas fa-cog"></i>
-                            <span class="nav-link-text">Configurações</span>
+                            <i class="fas fa-book"></i>
+                            <span class="nav-link-text">Acervo</span>
                         </a>
-                    </div> --}}
+                    </div>
                 </div>
 
                 <div class="sidebar-footer">
