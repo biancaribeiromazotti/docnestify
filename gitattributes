@@ -1,1 +1,2 @@
 *.blade.php linguist-language=PHP
+*.blade.php linguist-vendored
