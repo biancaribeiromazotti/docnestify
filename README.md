@@ -32,6 +32,7 @@ Este sistema foi desenvolvido para otimizar o gerenciamento de clientes e seus r
 - **Framework**: Laravel (PHP)
 - **Frontend**: Blade Templates, Bootstrap, CSS3, HTML5, JavaScript
 - **Banco de Dados**: PostgreSQL
+- **Containerização:**: Docker & Docker Compose
 - **Armazenamento**: Sistema de arquivos S3
 - **Autenticação**: Laravel Authentication
 - **Validação**: Laravel Validation
