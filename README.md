@@ -49,7 +49,7 @@ Este projeto utiliza Docker para facilitar o ambiente de desenvolvimento e produ
 
 1. **Clone o repositório**
 ```bash
-git clone [url-do-repositorio]
+git clone https://github.com/biancaribeiromazotti/docnestify
 cd docnestify
 ```
 
@@ -75,10 +75,6 @@ docker-compose exec app php artisan migrate
 
 6. **Acesse a aplicação**
 ```
-http://localhost:8000
+http://localhost:8080
 ```
 
-### Estrutura dos Containers
-- **app**: Container principal da aplicação Laravel
-- **database**: Container PostgreSQL
-- **nginx**: Servidor web para servir a aplicação
