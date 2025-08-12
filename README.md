@@ -32,8 +32,53 @@ Este sistema foi desenvolvido para otimizar o gerenciamento de clientes e seus r
 - **Framework**: Laravel (PHP)
 - **Frontend**: Blade Templates, Bootstrap, CSS3, HTML5, JavaScript
 - **Banco de Dados**: PostgreSQL
-- **Containerização:**: Docker & Docker Compose
 - **Armazenamento**: Sistema de arquivos S3
+- **Containerização**: Docker & Docker Compose
 - **Autenticação**: Laravel Authentication
 - **Validação**: Laravel Validation
 
+## 🐳 Configuração com Docker
+
+Este projeto utiliza Docker para facilitar o ambiente de desenvolvimento e produção.
+
+### Pré-requisitos
+- Docker
+- Docker Compose
+
+### Como executar
+
+1. **Clone o repositório**
+```bash
+git clone [url-do-repositorio]
+cd docnestify
+```
+
+2. **Configure as variáveis de ambiente**
+```bash
+cp .env.example .env
+```
+
+3. **Execute o projeto com Docker**
+```bash
+docker-compose up -d
+```
+
+4. **Instale as dependências do Laravel**
+```bash
+docker-compose exec app composer install
+```
+
+5. **Execute as migrações**
+```bash
+docker-compose exec app php artisan migrate
+```
+
+6. **Acesse a aplicação**
+```
+http://localhost:8000
+```
+
+### Estrutura dos Containers
+- **app**: Container principal da aplicação Laravel
+- **database**: Container PostgreSQL
+- **nginx**: Servidor web para servir a aplicação
