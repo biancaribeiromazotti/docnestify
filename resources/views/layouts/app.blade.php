@@ -295,7 +295,7 @@
                         </a>
                     </div>
                     <div class="nav-item">
-                        <a href="#" class="nav-link-sidebar">
+                        <a href="{{ route('clientes.index') }}" class="nav-link-sidebar {{ Request::routeIs('clientes.*') ? 'active' : '' }}" class="nav-link-sidebar">
                             <i class="fas fa-users"></i>
                             <span class="nav-link-text">Clientes</span>
                         </a>

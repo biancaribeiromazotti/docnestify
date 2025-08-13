@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ClienteController;
 
 // Redirecionar página inicial para login
 Route::get('/', function () {
@@ -12,3 +13,5 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 
 // As rotas de autenticação são carregadas automaticamente pelo Laravel UI
 Auth::routes();
+
+Route::resource('clientes', ClienteController::class);
